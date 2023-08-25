@@ -91,7 +91,7 @@ path = dump(imputation_values, IMPUTATION_FILE)
 
 """
 Encoding Categorical features. This step is necessary since ML models operate with numbers, not strings.
-Notice that we do not want to encode the target feature not the id column.
+Notice that we do not want to encode the target feature nor the id column.
 """
 
 # Saving the id and target columns in a different variable.
