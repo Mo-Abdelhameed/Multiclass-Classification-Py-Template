@@ -93,6 +93,7 @@ Each number of the 3 numbers in the row is a probability to one of the 3 classes
 """
 
 model = load(PREDICTOR_FILE_PATH)
+# Making predictions
 predictions = model.predict_proba(df)
 
 """
@@ -108,7 +109,7 @@ encoder = load(LABEL_ENCODER_FILE)
 # Getting the original class names
 class_names = encoder.inverse_transform([0, 1, 2])
 
-# Making predictions
+# Creating the predictions dataframe
 predictions = pd.DataFrame(predictions, columns=class_names)
 
 # Inserting the id column
