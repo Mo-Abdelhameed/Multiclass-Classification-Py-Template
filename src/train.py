@@ -112,7 +112,7 @@ encoder.fit(df)
 df = encoder.transform(df)
 
 # Saving the encoder to use it on the testing dataset
-path = dump(encoder, OHE_ENCODER_FILE)
+dump(encoder, OHE_ENCODER_FILE)
 
 """Encoding the target feature"""
 
